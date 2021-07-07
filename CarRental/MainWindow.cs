@@ -29,5 +29,13 @@ namespace CarRental
         {
 
         }
+
+        private void manageVehicleListingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var cars = new ManageVehicleListing();
+            cars.MdiParent = this;
+            cars.Show();
+
+        }
     }
 }
