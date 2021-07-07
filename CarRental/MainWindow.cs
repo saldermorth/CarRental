@@ -19,8 +19,15 @@ namespace CarRental
 
         private void addRentalRecordToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            
             var addRentalRecord = new rentalForm();
+            addRentalRecord.MdiParent = this;
             addRentalRecord.Show();
+        }
+
+        private void MainWindow_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
