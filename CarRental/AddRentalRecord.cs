@@ -12,11 +12,11 @@ namespace CarRental
 {
     public partial class rentalForm : Form
     {
-        private readonly CarRentalEntities carRentalEntities;
+        private readonly CarRentalEntities1 carRentalEntities;
         public rentalForm()
         {
             InitializeComponent();
-            carRentalEntities = new CarRentalEntities();
+            carRentalEntities = new CarRentalEntities1();
         }
 
         private void submitButton_Click(object sender, EventArgs e)
@@ -90,10 +90,6 @@ namespace CarRental
             typeOfCarValue.DataSource = cars;
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.Show();
-        }
+       
     }
 }

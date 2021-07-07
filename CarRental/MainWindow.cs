@@ -16,5 +16,11 @@ namespace CarRental
         {
             InitializeComponent();
         }
+
+        private void addRentalRecordToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var addRentalRecord = new rentalForm();
+            addRentalRecord.Show();
+        }
     }
 }

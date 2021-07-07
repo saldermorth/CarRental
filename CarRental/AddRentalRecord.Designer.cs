@@ -41,7 +41,6 @@ namespace CarRental
             this.submitButton = new System.Windows.Forms.Button();
             this.costValue = new System.Windows.Forms.TextBox();
             this.costLable = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // CarRentalLable
@@ -152,24 +151,11 @@ namespace CarRental
             this.costLable.TabIndex = 9;
             this.costLable.Text = "Cost";
             // 
-            // button1
-            // 
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(52, 364);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 58);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Launch Main Window";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // rentalForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.costLable);
             this.Controls.Add(this.costValue);
             this.Controls.Add(this.submitButton);
@@ -204,7 +190,6 @@ namespace CarRental
         private System.Windows.Forms.Button submitButton;
         private System.Windows.Forms.TextBox costValue;
         private System.Windows.Forms.Label costLable;
-        private System.Windows.Forms.Button button1;
     }
 }
 

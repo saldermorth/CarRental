@@ -4,8 +4,8 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="c85b8b732693422787961c81274eaae7" Name="Diagram1">
-        <EntityTypeShape EntityType="CarRentalModel.CarRentalRecord" Width="2.375" PointX="3" PointY="1" IsExpanded="true" />
+      <Diagram DiagramId="ca59bee1664c42b89a15ebff535f6923" Name="Diagram1">
+        <EntityTypeShape EntityType="CarRentalModel.CarRentalRecord" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="CarRentalModel.TypesOfCar" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
         <AssociationConnector Association="CarRentalModel.FK_CarRentalRecord_TypesOfCars" ManuallyRouted="false" />
       </Diagram>

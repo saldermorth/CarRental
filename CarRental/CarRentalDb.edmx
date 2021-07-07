@@ -80,7 +80,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="CarRentalEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="CarRentalEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="CarRentalRecords" EntityType="Self.CarRentalRecord" />
           <EntitySet Name="TypesOfCars" EntityType="Self.TypesOfCar" />
           <AssociationSet Name="FK_CarRentalRecord_TypesOfCars" Association="Self.FK_CarRentalRecord_TypesOfCars">
@@ -93,7 +93,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="CarRentalModelStoreContainer" CdmEntityContainer="CarRentalEntities">
+        <EntityContainerMapping StorageEntityContainer="CarRentalModelStoreContainer" CdmEntityContainer="CarRentalEntities1">
           <EntitySetMapping Name="CarRentalRecords">
             <EntityTypeMapping TypeName="CarRentalModel.CarRentalRecord">
               <MappingFragment StoreEntitySet="CarRentalRecord">

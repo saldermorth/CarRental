@@ -55,29 +55,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CarRentalDb.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CarRentalDb.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="CarRentalDb.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CarRentalDb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="CarRentalDb.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CarRentalDb.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="CarRentalRecord.cs">
-      <DependentUpon>CarRentalDb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="AddRentalRecord.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="AddRentalRecord.Designer.cs">
+      <DependentUpon>AddRentalRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CarRentalDB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CarRentalDB.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CarRentalDB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CarRentalDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CarRentalDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CarRentalDB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="CarRentalRecord.cs">
+      <DependentUpon>CarRentalDB.tt</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.cs">
       <SubType>Form</SubType>
@@ -88,10 +88,10 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TypesOfCar.cs">
-      <DependentUpon>CarRentalDb.tt</DependentUpon>
+      <DependentUpon>CarRentalDB.tt</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="AddRentalRecord.resx">
+      <DependentUpon>AddRentalRecord.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>
@@ -105,12 +105,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EntityDeploy Include="CarRentalDb.edmx">
+    <EntityDeploy Include="CarRentalDB.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>CarRentalDb.Designer.cs</LastGenOutput>
+      <LastGenOutput>CarRentalDB.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="CarRentalDb.edmx.diagram">
-      <DependentUpon>CarRentalDb.edmx</DependentUpon>
+    <None Include="CarRentalDB.edmx.diagram">
+      <DependentUpon>CarRentalDB.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -127,19 +127,19 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="CarRentalDb.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>CarRentalDb.Context.cs</LastGenOutput>
-      <DependentUpon>CarRentalDb.edmx</DependentUpon>
-    </Content>
-    <Content Include="CarRentalDb.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>CarRentalDb.edmx</DependentUpon>
-      <LastGenOutput>CarRentalDb.cs</LastGenOutput>
-    </Content>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Content Include="CarRentalDB.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CarRentalDB.edmx</DependentUpon>
+      <LastGenOutput>CarRentalDB.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="CarRentalDB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CarRentalDB.edmx</DependentUpon>
+      <LastGenOutput>CarRentalDB.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
