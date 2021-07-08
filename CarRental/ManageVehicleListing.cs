@@ -21,8 +21,31 @@ namespace CarRental
 
         private void ManageVehicleListing_Load(object sender, EventArgs e)
         {
-            var cars = _db.TypesOfCars.ToList();
+            //Select  * From TypeOfCars
+            //var cars = _db.TypesOfCars.ToList();
+
+            //Select Id as CategoryAttribute ID , name as CarRental Name from types of cars
+            var cars = _db.TypesOfCars
+                .Select(q => new { ID = q.ID, NAME = q.name })
+                .ToList();
             gvVehicleList.DataSource = cars;
+            gvVehicleList.Columns[0].HeaderText = "ID";
+            gvVehicleList.Columns[1].HeaderText = "NAME";
+        }
+
+        private void addNewCarButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void editCarButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void deleteCarButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
