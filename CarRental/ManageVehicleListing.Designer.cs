@@ -40,9 +40,9 @@ namespace CarRental
             // gvVehicleList
             // 
             this.gvVehicleList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvVehicleList.Location = new System.Drawing.Point(12, 116);
+            this.gvVehicleList.Location = new System.Drawing.Point(106, 97);
             this.gvVehicleList.Name = "gvVehicleList";
-            this.gvVehicleList.Size = new System.Drawing.Size(228, 159);
+            this.gvVehicleList.Size = new System.Drawing.Size(571, 211);
             this.gvVehicleList.TabIndex = 0;
             // 
             // CarRentalLable
@@ -57,7 +57,7 @@ namespace CarRental
             // 
             // addNewCarButton
             // 
-            this.addNewCarButton.Location = new System.Drawing.Point(336, 130);
+            this.addNewCarButton.Location = new System.Drawing.Point(106, 353);
             this.addNewCarButton.Name = "addNewCarButton";
             this.addNewCarButton.Size = new System.Drawing.Size(105, 38);
             this.addNewCarButton.TabIndex = 2;
@@ -67,7 +67,7 @@ namespace CarRental
             // 
             // editCarButton
             // 
-            this.editCarButton.Location = new System.Drawing.Point(336, 192);
+            this.editCarButton.Location = new System.Drawing.Point(339, 353);
             this.editCarButton.Name = "editCarButton";
             this.editCarButton.Size = new System.Drawing.Size(105, 38);
             this.editCarButton.TabIndex = 3;
@@ -77,7 +77,7 @@ namespace CarRental
             // 
             // deleteCarButton
             // 
-            this.deleteCarButton.Location = new System.Drawing.Point(336, 254);
+            this.deleteCarButton.Location = new System.Drawing.Point(572, 353);
             this.deleteCarButton.Name = "deleteCarButton";
             this.deleteCarButton.Size = new System.Drawing.Size(105, 38);
             this.deleteCarButton.TabIndex = 4;

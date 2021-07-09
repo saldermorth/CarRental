@@ -25,12 +25,30 @@ namespace CarRental
             //var cars = _db.TypesOfCars.ToList();
 
             //Select Id as CategoryAttribute ID , name as CarRental Name from types of cars
+            //var cars = _db.TypesOfCars
+            //    .Select(q => new { ID = q.ID, Make = q.Make})
+            //    .ToList();
+            //gvVehicleList.DataSource = cars;
+            //gvVehicleList.Columns[0].HeaderText = "ID";
+            //gvVehicleList.Columns[1].HeaderText = "NAME";
+
             var cars = _db.TypesOfCars
-                .Select(q => new { ID = q.ID, NAME = q.name })
-                .ToList();
+                 .Select(q => new 
+                 { 
+                     
+                     Make = q.Make, 
+                     Model = q.Model, 
+                     VIN = q.VIN, 
+                     Year = q.Year,
+                     LicensePlateNumber = q.LicensePlateNumber,
+                     q.ID,
+                 })
+                 .ToList();
             gvVehicleList.DataSource = cars;
-            gvVehicleList.Columns[0].HeaderText = "ID";
-            gvVehicleList.Columns[1].HeaderText = "NAME";
+            gvVehicleList.Columns[4].HeaderText = "Licens Plate Number";
+            gvVehicleList.Columns[5].Visible = false;
+            
+
         }
 
         private void addNewCarButton_Click(object sender, EventArgs e)

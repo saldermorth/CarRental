@@ -83,7 +83,15 @@ namespace CarRental
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            var cars = carRentalEntities.TypesOfCars.ToList();
+            //var cars = carRentalEntities.TypesOfCars.ToList();
+
+            var cars = carRentalEntities.TypesOfCars
+                .Select(q => new 
+                {  
+                    ID = q.ID, 
+                    Name = q.Make + " " + q.Model 
+                })
+                .ToList();
 
             typeOfCarValue.DisplayMember = "Name";
             typeOfCarValue.ValueMember = "ID";
