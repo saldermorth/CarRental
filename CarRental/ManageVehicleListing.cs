@@ -53,17 +53,31 @@ namespace CarRental
 
         private void addNewCarButton_Click(object sender, EventArgs e)
         {
-
+            AddEditVehicle addEditVehicle = new AddEditVehicle();
+            addEditVehicle.MdiParent = this.MdiParent;
+            addEditVehicle.Show();
         }
 
         private void editCarButton_Click(object sender, EventArgs e)
         {
+            var id = (int)gvVehicleList.SelectedRows[0].Cells["ID"].Value;
+            //var id = (int)gvVehicleList.SelectedRows[0].Cells["Id"].Value;
 
+            var car = _db.TypesOfCars.FirstOrDefault(q => q.ID == id);
+
+            var addEditVehicle = new AddEditVehicle(car);
+            addEditVehicle.MdiParent = this.MdiParent;
+            addEditVehicle.Show();
         }
 
         private void deleteCarButton_Click(object sender, EventArgs e)
         {
+            var id = (int)gvVehicleList.SelectedRows[0].Cells["ID"].Value;
 
+            var car = _db.TypesOfCars.FirstOrDefault(q => q.ID == id);
+
+            _db.TypesOfCars.Remove(car);
+            _db.SaveChanges();
         }
     }
 }

@@ -43,6 +43,7 @@ namespace CarRental
             this.vinValue = new System.Windows.Forms.TextBox();
             this.yearValue = new System.Windows.Forms.TextBox();
             this.licensePlateValue = new System.Windows.Forms.TextBox();
+            this.idLable = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -182,11 +183,21 @@ namespace CarRental
             this.licensePlateValue.Size = new System.Drawing.Size(100, 20);
             this.licensePlateValue.TabIndex = 13;
             // 
+            // idLable
+            // 
+            this.idLable.AutoSize = true;
+            this.idLable.Location = new System.Drawing.Point(400, 38);
+            this.idLable.Name = "idLable";
+            this.idLable.Size = new System.Drawing.Size(0, 13);
+            this.idLable.TabIndex = 2;
+            this.idLable.Visible = false;
+            // 
             // AddEditVehicle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.idLable);
             this.Controls.Add(this.titleLable);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.saveChangesButton);
@@ -216,5 +227,6 @@ namespace CarRental
         private System.Windows.Forms.TextBox yearValue;
         private System.Windows.Forms.TextBox licensePlateValue;
         private System.Windows.Forms.Label titleLable;
+        private System.Windows.Forms.Label idLable;
     }
 }

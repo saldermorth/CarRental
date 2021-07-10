@@ -42,6 +42,7 @@ namespace CarRental
             this.gvVehicleList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvVehicleList.Location = new System.Drawing.Point(106, 97);
             this.gvVehicleList.Name = "gvVehicleList";
+            this.gvVehicleList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gvVehicleList.Size = new System.Drawing.Size(571, 211);
             this.gvVehicleList.TabIndex = 0;
             // 
